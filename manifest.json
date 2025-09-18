@@ -1,0 +1,12 @@
+{
+    "display_name": "Créateur de personnages aléatoires",
+    "loading_order": 25,
+    "requires": [],
+    "optional": [],
+    "js": "index.js",
+    "css": "style.css",
+    "author": "ChatGPT",
+    "version": "1.0.0",
+    "homePage": "https://github.com",
+    "auto_update": false
+}

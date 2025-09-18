@@ -1,0 +1,60 @@
+#randomGeneratorExtension .randomgenerator-helper {
+    font-size: 0.9em;
+    opacity: 0.85;
+    margin-bottom: 10px;
+}
+
+#randomGeneratorCreate {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#randomGeneratorCreate.disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+#randomGeneratorCreate .fa-solid {
+    transition: transform 0.3s ease;
+}
+
+#randomGeneratorCreate.loading .fa-solid {
+    animation: randomgenerator-spin 1s linear infinite;
+}
+
+@keyframes randomgenerator-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#randomGeneratorExtension .randomgenerator-preview {
+    margin-top: 12px;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid var(--SmartThemeBorderColor, rgba(255, 255, 255, 0.15));
+    background: var(--SmartThemeBlockColor, rgba(0, 0, 0, 0.35));
+}
+
+#randomGeneratorExtension .randomgenerator-preview-title {
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: block;
+}
+
+#randomGeneratorPreviewText {
+    white-space: pre-wrap;
+    font-family: var(--SmartThemeMonoFont, "Fira Code", monospace);
+    line-height: 1.35;
+    max-height: 280px;
+    overflow-y: auto;
+}
+
+#randomGeneratorExtension .randomgenerator-preview[hidden] {
+    display: none;
+}
